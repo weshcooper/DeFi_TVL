@@ -73,13 +73,12 @@ stratified <- mainTop5 %>%
 
 
 #anova
-aov(tvl ~ category, data = mainTop5)
+aov(tvl ~ category, data = ProtocolTVL)
 
-Anova(lm(tvl ~ chain * category, data=stratified))
+Anova(lm(tvl ~ chain * category, data=ProtocolTVL))
 
-Anova(lm(tvl ~ category * category, data=mainTop5))
+Anova(lm(tvl ~ category * category, data=ProtocolTVL))
 
-one.way
 
 
 ####
